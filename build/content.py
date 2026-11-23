@@ -1,7 +1,14 @@
 # Conteúdo das páginas. Executado dentro de build.py (usa as funções de lá).
 
-# ---------------------------------------------------------------- HOME
-home_cards = ''.join(f'''<a class="card" href="{u}"><span class="num">{i:02d}</span><h3>{n}</h3><p>{d}</p><span class="more">Saiba mais →</span></a>'''
+ICONS = [
+ '<path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>',
+ '<path d="M14 14.8V4a2 2 0 1 0-4 0v10.8a4 4 0 1 0 4 0zM12 9v7"/>',
+ '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+ '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v5M12 16h0"/>',
+ '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',
+ '<path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/>',
+]
+home_cards = ''.join(f'''<a class="card" href="{u}"><span class="ico-b"><svg viewBox="0 0 24 24">{ICONS[i-1]}</svg></span><h3>{n}</h3><p>{d}</p><span class="more">Saiba mais →</span></a>'''
     for i, ((u, n), d) in enumerate(zip(SERVICOS, [
         'Análise dos autos, quesitos, acompanhamento da diligência, parecer técnico e análise crítica do laudo.',
         'Agentes físicos, químicos e biológicos avaliados pela atividade real, tempo de exposição, EPC e EPI.',
@@ -15,11 +22,12 @@ home = head('Assistência Técnica em Perícia Trabalhista em São Paulo | Jusan
             'Assistência técnica em perícias trabalhistas de insalubridade, periculosidade, acidente de trabalho, ergonomia, LTCAT e PPP. Para escritórios de advocacia e empresas, em São Paulo e todo o Brasil.',
             '/')
 home += header()
-home += f'''<section class="hero"><img class="mark" src="/assets/img/mark.webp" alt=""><div class="wrap">
-<div class="eyebrow">Assistência técnica em perícias trabalhistas</div>
+home += f'''<section class="hero home"><img class="mark" src="/assets/img/mark.webp" alt=""><div class="wrap hero-split">
+<div><div class="eyebrow">Assistência técnica em perícias trabalhistas</div>
 <h1>Segurança do Trabalho aplicada à <em>prova técnica</em>.</h1>
-<p class="lead">Assistência técnica pericial para escritórios de advocacia e empresas, para reclamantes e reclamadas, em perícias de insalubridade, periculosidade, acidente de trabalho, ergonomia, LTCAT e PPP. São Paulo e todo o Brasil.</p>
-<div class="actions"><a class="btn pri" href="{WA}" target="_blank" rel="noopener">Falar pelo WhatsApp</a><a class="btn sec" href="#servicos">Ver serviços</a></div>
+<p class="lead">Assistência técnica pericial para escritórios de advocacia e empresas, para reclamantes e reclamadas, em perícias de insalubridade, periculosidade, acidente de trabalho, ergonomia, LTCAT e PPP.</p>
+<div class="actions"><a class="btn pri" href="{WA}" target="_blank" rel="noopener">Falar pelo WhatsApp</a><a class="btn sec" href="#servicos">Ver serviços</a></div></div>
+<img class="hero-img" src="/assets/img/equipe.webp" alt="Equipe em treinamento de Segurança do Trabalho conduzido pela Jusante" width="1400" height="1050" fetchpriority="high">
 </div></section>
 <div class="wrap"><div class="stats">
 <div class="stat"><b><small>+</small>410</b><span>assistências técnicas periciais</span></div>
@@ -35,15 +43,22 @@ home += f'''<section class="hero"><img class="mark" src="/assets/img/mark.webp" 
 <div class="grid g3">{home_cards}</div>
 </div></section>
 
-<section class="soft"><div class="wrap split">
+<section class="soft"><div class="wrap">
+<div class="split" style="align-items:start">
 <div><div class="eyebrow">Para quem atuamos</div>
 <h2>Escritórios de advocacia e empresas.</h2>
-<p class="lead">Atuamos para reclamantes e reclamadas, sempre com a mesma régua técnica.</p>
-<div class="grid g2" style="margin-top:28px">
+<p class="lead">Atuamos para reclamantes e reclamadas, sempre com a mesma régua técnica.</p></div>
+<div class="grid g2" style="margin-top:0">
 <div class="card"><h3>Escritórios de advocacia</h3><p>Leitura técnica da inicial e da defesa, quesitos, acompanhamento da diligência, parecer e subsídios para manifestação sobre o laudo.</p></div>
 <div class="card"><h3>Empresas</h3><p>Preparação documental para a perícia, orientação ao preposto, acompanhamento da diligência e prevenção de novos passivos.</p></div>
 </div></div>
-<img src="/assets/img/atendimento.webp" alt="Atendimento técnico da Jusante com análise de parecer" width="1060" height="630" loading="lazy">
+<h3 style="margin-top:56px;font-size:20px">O que costuma decidir uma perícia</h3>
+<div class="factors">
+<div><b>Eficácia do EPI</b><span>CA, vida útil, troca, treinamento e fiscalização do uso.</span></div>
+<div><b>Tempo e forma de exposição</b><span>Habitualidade e frequência pela rotina real.</span></div>
+<div><b>Área de risco</b><span>Delimitação prevista na NR-16 e ingresso efetivo.</span></div>
+<div><b>Metodologia de medição</b><span>NHOs da Fundacentro e registro rastreável.</span></div>
+</div>
 </div></section>
 
 <section id="metodo" class="dark"><div class="wrap">
@@ -57,22 +72,15 @@ home += f'''<section class="hero"><img class="mark" src="/assets/img/mark.webp" 
 
 <section><div class="wrap split">
 <img src="/assets/img/treinamento.webp" alt="Treinamento de Segurança do Trabalho conduzido pela Jusante" width="1400" height="1051" loading="lazy">
-<div><div class="eyebrow">Medições próprias</div>
-<h2>Prova técnica com base em medição.</h2>
-<p class="lead">Avaliações quantitativas com equipamentos próprios dão base objetiva ao parecer.</p>
+<div><div class="eyebrow">Campo e medições</div>
+<h2>Engenheiros em campo, com medição própria.</h2>
+<p class="lead">Além das perícias, a Jusante conduz treinamentos e programas de SST em empresas. Isso traz para o processo a leitura de quem conhece a operação por dentro.</p>
 <div class="chips"><span class="chip">Ruído – NHO 01</span><span class="chip">Calor/IBUTG – NHO 06</span><span class="chip">Vibração – NHO 09 e 10</span><span class="chip">Iluminamento – NHO 11</span><span class="chip">Químicos com bomba</span><span class="chip">pH de produtos</span></div>
-<p style="margin-top:22px">Vivência em indústria, construção civil, logística, alimentos, farmacêutico, hospitalar, cosméticos e varejo.</p>
+<p style="margin-top:20px">Vivência em indústria, construção civil, logística, alimentos, farmacêutico, hospitalar, cosméticos e varejo.</p>
+<a class="btn dark" style="margin-top:22px" href="/consultoria-ssma/">Consultoria SSMA e treinamentos</a>
 </div></div></section>
 
-<section class="soft"><div class="wrap split">
-<div><div class="eyebrow">Equipe</div>
-<h2>Engenheiros de Segurança do Trabalho em campo.</h2>
-<p class="lead">Além das perícias, a Jusante conduz treinamentos e programas de SST em empresas, o que traz para o processo a leitura de quem conhece a operação por dentro.</p>
-<a class="btn dark" style="margin-top:26px" href="/consultoria-ssma/">Consultoria SSMA e treinamentos</a></div>
-<img src="/assets/img/equipe.webp" alt="Equipe treinada pela Jusante em Segurança do Trabalho" width="1400" height="1050" loading="lazy">
-</div></section>
-
-<section><div class="wrap person">
+<section class="soft"><div class="wrap person">
 <img src="/assets/img/clayton-mendel.webp" alt="Eng. Clayton Mendel, responsável técnico da Jusante" width="900" height="945" loading="lazy">
 <div><div class="eyebrow">Responsável técnico</div>
 <h2>Eng. Clayton Mendel</h2>
@@ -84,16 +92,6 @@ home += f'''<section class="hero"><img class="mark" src="/assets/img/mark.webp" 
 '''
 
 home += """
-<section class="soft"><div class="wrap">
-<div class="eyebrow">O que decide uma perícia</div>
-<h2>Quatro pontos que costumam definir o laudo.</h2>
-<div class="grid g4">
-<div class="card"><span class="num">EPI</span><h3>Eficácia do EPI</h3><p>Adequação ao risco, CA válido, vida útil, periodicidade de troca, treinamento e fiscalização do uso.</p></div>
-<div class="card"><span class="num">EXPOSIÇÃO</span><h3>Tempo e forma de exposição</h3><p>Habitualidade, frequência e duração reais, apuradas pela rotina efetivamente exercida.</p></div>
-<div class="card"><span class="num">NR-16</span><h3>Área de risco</h3><p>Delimitação da área prevista no anexo e verificação do ingresso do trabalhador.</p></div>
-<div class="card"><span class="num">NHO</span><h3>Metodologia de medição</h3><p>Avaliação conforme as NHOs da Fundacentro, com instrumento adequado e registro rastreável.</p></div>
-</div></div></section>
-
 <section id="atendimento"><div class="wrap split">
 <div><div class="eyebrow">Onde atendemos</div>
 <h2>São Paulo, regiões metropolitanas e interior próximo.</h2>
@@ -121,6 +119,7 @@ var t='Olá, vim pelo site da Jusante.\\nPerfil: '+f.perfil.value+'\\nAssunto: '
 window.open('https://wa.me/5511986489818?text='+encodeURIComponent(t),'_blank','noopener');});
 </script>
 """
+
 home += footer()
 write('/', home)
 

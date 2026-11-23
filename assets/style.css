@@ -56,7 +56,7 @@ section.dark .lead{color:#b8c8cc}
 
 /* hero */
 .hero{background:linear-gradient(115deg,#0a181d 0%,#0f2a31 55%,#1a3741 100%);border-top:1px solid rgba(79,193,218,.25);color:#fff;padding:96px 0 120px;position:relative;overflow:hidden}
-.hero .mark,.cta-band .mark{position:absolute;pointer-events:none;opacity:.08}
+.hero .mark,.cta-band .mark{position:absolute;pointer-events:none;opacity:.12}
 .hero .mark{right:4%;top:50%;transform:translateY(-50%);width:min(440px,42vw)}
 .cta-band{position:relative;overflow:hidden}
 .cta-band .mark{right:24px;top:-20px;width:260px;opacity:.06}
@@ -162,3 +162,18 @@ footer.site .legal{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;pa
 .waform select,.waform input,.waform textarea{display:block;width:100%;margin-top:6px;padding:11px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:15px;color:var(--txt);background:#fff}
 .waform select:focus,.waform input:focus,.waform textarea:focus{outline:2px solid var(--accent);border-color:transparent}
 .waform .btn{border:0;cursor:pointer;justify-content:center;width:100%;margin-top:4px}
+.hero.home{padding:72px 0 120px}
+.hero-split{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative}
+.hero-img{width:100%;height:auto;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.35);border:1px solid rgba(79,193,218,.25);aspect-ratio:4/3;object-fit:cover}
+.hero.home h1{font-size:clamp(32px,4.2vw,50px)}
+@media(max-width:900px){.hero-split{grid-template-columns:1fr;gap:32px}.hero-img{aspect-ratio:16/10}}
+.ico-b{width:44px;height:44px;border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center}
+.ico-b svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+a.card:hover .ico-b{background:var(--aqua)}
+.card .ico-b + h3{margin-top:16px}
+.factors{display:grid;grid-template-columns:repeat(4,1fr);margin-top:18px;border-top:1px solid var(--line)}
+.factors div{padding:18px 18px 0 0}
+.factors b{display:block;color:var(--ink);font-size:15px;border-left:3px solid var(--accent);padding-left:10px}
+.factors span{display:block;color:var(--muted);font-size:14px;margin-top:6px;padding-left:13px}
+@media(max-width:900px){.factors{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.factors{grid-template-columns:1fr}}
