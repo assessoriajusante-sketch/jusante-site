@@ -19,7 +19,7 @@ home_cards = ''.join(f'''<a class="card" href="{u}"><span class="ico-b"><svg vie
     ]), start=1))
 
 home = head('Assistência Técnica em Perícia Trabalhista em São Paulo | Jusante',
-            'Assistência técnica em perícias trabalhistas de insalubridade, periculosidade, acidente de trabalho, ergonomia, LTCAT e PPP. Para escritórios de advocacia e empresas, em São Paulo e todo o Brasil.',
+            'Assistência técnica em perícias trabalhistas de insalubridade, periculosidade, acidente de trabalho, ergonomia, LTCAT e PPP. Para escritórios de advocacia e empresas em São Paulo, regiões metropolitanas e interior próximo.',
             '/')
 home += header()
 home += f'''<section class="hero home"><img class="mark" src="/assets/img/mark.webp" alt=""><div class="wrap hero-split">
@@ -143,7 +143,7 @@ service_page('/assistencia-tecnica-pericia-trabalhista/',
 <h2>Temas mais frequentes</h2>
 <div class="chips"><span class="chip">Insalubridade</span><span class="chip">Periculosidade</span><span class="chip">Acidente de trabalho</span><span class="chip">Ergonomia</span><span class="chip">Eficácia de EPI</span><span class="chip">LTCAT e PPP</span><span class="chip">Aposentadoria especial</span></div>
 <h2>Onde atuamos</h2>
-<p>Sede em São Paulo, com atuação na capital, região metropolitana, interior e outros estados, conforme a demanda.</p>''',
+<p>Sede em São Paulo, com diligências na capital, nas regiões metropolitanas (TRT-2) e no interior próximo (TRT-15). Demais localidades sob consulta.</p>''',
 [('O que faz o assistente técnico na perícia trabalhista?', 'É o profissional indicado pela parte para acompanhar a perícia. Analisa os autos e os documentos técnicos, formula quesitos, acompanha a diligência, faz perguntas ao perito e apresenta parecer técnico sobre o laudo. Também prepara a parte assistida para a diligência. Como trabalhador e preposto não costumam dominar a matéria técnica, filtramos o que é relevante para a perícia e orientamos a relatar com clareza as atividades realmente exercidas, os agentes de risco, a frequência, o tempo de exposição e o uso de EPIs. Isso mantém a diligência focada no objeto da perícia. Enviamos um resumo para estudo, sempre com o compromisso de relatar os fatos como são.'),
   ('Quem pode ser assistente técnico?', 'Um profissional de confiança da parte, habilitado na matéria da perícia. Em insalubridade e periculosidade, normalmente engenheiro de segurança do trabalho ou médico do trabalho. O assistente não está sujeito a impedimento ou suspeição (CPC, art. 466, § 1º).'),
   ('Quem paga o assistente técnico no processo trabalhista?', 'A parte que o indicou, mesmo que vença na matéria da perícia (Súmula 341 do TST). Os honorários do assistente são contratados diretamente com ele e não se confundem com os do perito do juízo.'),
@@ -275,6 +275,23 @@ service_page('/consultoria-ssma/',
  [('A Jusante elabora PGR e LTCAT?', 'Sim, com levantamento de campo e medições próprias quando necessárias.'),
   ('Os treinamentos podem ser na empresa?', 'Sim. Podem ser presenciais, na empresa, ou EAD, conforme a norma e o público.')],
  ['/pericia-insalubridade/', '/ltcat-ppp-extemporaneo/', '/acidente-de-trabalho-e-ergonomia/'])
+
+
+# ---------------------------------------------------------------- DÚVIDAS FREQUENTES
+_secs = ''
+_all = []
+for _crumb, _path, _faqs in ALL_FAQS:
+    _h, _ = faq_block(_faqs)
+    _all += _faqs
+    _secs += f'<h2 style="margin-top:48px">{_crumb}</h2>{_h}<p style="margin-top:14px"><a href="{_path}">Ver a página de {_crumb.lower()} →</a></p>'
+_, _ld = faq_block(_all)
+faqp = head('Dúvidas Frequentes sobre Perícia Trabalhista, Insalubridade e Periculosidade | Jusante',
+            'Respostas sobre assistente técnico, perícia de insalubridade e periculosidade, graus, EPI, cumulação de adicionais, LTCAT e PPP, com base na CLT, nas NRs e na jurisprudência do TST.',
+            '/duvidas-frequentes/', [crumb_ld('Dúvidas frequentes', '/duvidas-frequentes/'), _ld])
+faqp += header() + hero_page('Dúvidas frequentes', 'Perguntas sobre perícia trabalhista',
+    'As dúvidas mais buscadas sobre assistência técnica, insalubridade, periculosidade, LTCAT e PPP, respondidas com base na legislação e nas normas.', 'Dúvidas frequentes')
+faqp += f'<section><div class="wrap aside"><div class="prose">{_secs}</div>{side_box()}</div></section>' + cta_band() + footer()
+write('/duvidas-frequentes/', faqp)
 
 # ---------------------------------------------------------------- PESSOA
 person = head('Eng. Clayton Mendel – Engenheiro de Segurança do Trabalho | Jusante',

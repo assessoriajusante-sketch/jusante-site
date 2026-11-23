@@ -92,12 +92,12 @@ def header():
 <a class="brand" href="/" aria-label="Jusante Perícias e SSMA – início"><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="226" height="100"></a>
 <nav class="main" aria-label="Principal">
 <details class="svc"><summary>Serviços</summary><div class="dd">{svc}</div></details>
-<a href="/#metodo">Método</a>
+<a href="/duvidas-frequentes/">Dúvidas</a>
 <a href="/eng-clayton-mendel/">Responsável técnico</a>
 <a href="/#fale">Contato</a>
 <a class="cta" href="{WA}" target="_blank" rel="noopener">Fale no WhatsApp</a>
 </nav>
-<details class="mob"><summary>Menu</summary><div class="panel">{svc}<a href="/#metodo">Método</a><a href="/eng-clayton-mendel/">Responsável técnico</a><a href="/#fale">Contato</a><a href="{WA}" target="_blank" rel="noopener">WhatsApp {TEL}</a></div></details>
+<details class="mob"><summary>Menu</summary><div class="panel">{svc}<a href="/duvidas-frequentes/">Dúvidas frequentes</a><a href="/eng-clayton-mendel/">Responsável técnico</a><a href="/#fale">Contato</a><a href="{WA}" target="_blank" rel="noopener">WhatsApp {TEL}</a></div></details>
 </div></header>
 <main id="conteudo">
 '''
@@ -119,13 +119,13 @@ def footer():
 <div class="cols">
 <div><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="181" height="80" style="height:80px;width:auto">
 <p style="margin-top:16px;max-width:360px">Engenharia de Segurança do Trabalho aplicada à prova técnica. Assistência técnica pericial para escritórios de advocacia e empresas, para reclamantes e reclamadas.</p></div>
-<div><h4>Serviços</h4>{svc}</div>
+<div><h4>Serviços</h4>{svc}<a href="/duvidas-frequentes/">Dúvidas frequentes</a></div>
 <div><h4>Contato</h4>
 <a href="{WA}" target="_blank" rel="noopener">WhatsApp {TEL}</a>
 {email_link()}
 <a href="https://www.instagram.com/jusantessma/" target="_blank" rel="noopener">Instagram @jusantessma</a>
 <a href="https://www.linkedin.com/company/jusante" target="_blank" rel="noopener">LinkedIn</a>
-<p style="margin-top:8px">São Paulo/SP · atendimento em todo o Brasil</p></div>
+<p style="margin-top:8px">São Paulo/SP · capital, regiões metropolitanas e interior próximo</p></div>
 </div>
 <div class="legal">Jusante Perícias e SSMA · CNPJ 55.532.612/0001-17 · Responsável técnico: Eng. Clayton Mendel, CREA-SP 5070143507</div>
 </div></footer>
@@ -167,7 +167,11 @@ def side_box():
 <p style="margin-top:18px;font-size:13px">Atendimento a escritórios de advocacia e empresas, para reclamantes e reclamadas.</p></aside>'''
 
 
+ALL_FAQS = []
+
+
 def service_page(path, title, desc, eyebrow, h1, lead, crumb, body, faqs, related):
+    ALL_FAQS.append((crumb, path, faqs))
     faq_html, faq_ld = faq_block(faqs)
     rel = ''.join(f'<a class="card" href="{u}"><h3>{n}</h3><span class="more" style="margin-top:12px">Ver serviço →</span></a>'
                   for u, n in SERVICOS if u in related)
