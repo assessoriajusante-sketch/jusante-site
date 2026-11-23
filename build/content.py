@@ -30,7 +30,7 @@ home += f'''<section class="hero home"><img class="mark" src="/assets/img/mark.w
 <img class="hero-img" src="/assets/img/equipe.webp" alt="Equipe em treinamento de Segurança do Trabalho conduzido pela Jusante" width="1400" height="1050" fetchpriority="high">
 </div></section>
 <div class="wrap"><div class="stats">
-<div class="stat"><b><small>+</small>410</b><span>assistências técnicas periciais</span></div>
+<div class="stat"><b><small>+</small>430</b><span>assistências técnicas periciais</span></div>
 <div class="stat"><b><small>+</small>70</b><span>peritos judiciais acompanhados</span></div>
 <div class="stat"><b><small>+</small>15</b><span>anos de atuação em SSMA</span></div>
 <div class="stat"><b>360°</b><span>antes, durante e depois da perícia</span></div>
@@ -85,7 +85,7 @@ home += f'''<section class="hero home"><img class="mark" src="/assets/img/mark.w
 <div><div class="eyebrow">Responsável técnico</div>
 <h2>Eng. Clayton Mendel</h2>
 <p style="margin-top:10px;font-weight:600;color:var(--teal)">Engenheiro Ambiental e de Segurança do Trabalho · Pós-graduado em Ergonomia · CREA-SP 5070143507</p>
-<p class="lead">Atuação em SSMA desde 2009, em ambientes corporativos e industriais. Mais de 410 assistências técnicas em perícias trabalhistas e cíveis, com experiência em diligências conduzidas por mais de 70 peritos judiciais.</p>
+<p class="lead">Atuação em SSMA desde 2009, em ambientes corporativos e industriais. Mais de 430 assistências técnicas em perícias trabalhistas e cíveis, com experiência em diligências conduzidas por mais de 70 peritos judiciais.</p>
 <p class="quote">O jurídico conduz a tese. A Jusante cuida da prova técnica.</p>
 <a class="btn dark" style="margin-top:26px" href="/eng-clayton-mendel/">Conheça a trajetória</a></div>
 </div></section>
@@ -281,7 +281,7 @@ person += f'''<section><div class="wrap person">
 <div class="prose">
 <h2>Trajetória</h2>
 <p>Clayton Wallace Mendel Martins atua em Saúde, Segurança e Meio Ambiente desde 2009, com trajetória em ambientes corporativos e industriais. É fundador e responsável técnico da Jusante Perícias e SSMA.</p>
-<p>Atua em perícias trabalhistas e cíveis, com mais de 410 assistências técnicas e experiência em diligências conduzidas por mais de 70 peritos judiciais. Coordena uma equipe de engenheiros de Segurança do Trabalho com registro no CREA-SP.</p>
+<p>Atua em perícias trabalhistas e cíveis, com mais de 430 assistências técnicas e experiência em diligências conduzidas por mais de 70 peritos judiciais. Coordena uma equipe de engenheiros de Segurança do Trabalho com registro no CREA-SP.</p>
 <p>Mantém atualização contínua em cursos e eventos de instituições como OAB e ESA, com foco na interface entre Engenharia, Segurança do Trabalho e prova pericial.</p>
 <h2>Formação</h2>
 <ul><li>Engenharia Ambiental</li><li>Pós-graduação em Engenharia de Segurança do Trabalho</li><li>Pós-graduação em Ergonomia</li></ul>
