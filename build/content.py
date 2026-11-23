@@ -144,10 +144,12 @@ service_page('/assistencia-tecnica-pericia-trabalhista/',
 <div class="chips"><span class="chip">Insalubridade</span><span class="chip">Periculosidade</span><span class="chip">Acidente de trabalho</span><span class="chip">Ergonomia</span><span class="chip">Eficácia de EPI</span><span class="chip">LTCAT e PPP</span><span class="chip">Aposentadoria especial</span></div>
 <h2>Onde atuamos</h2>
 <p>Sede em São Paulo, com atuação na capital, região metropolitana, interior e outros estados, conforme a demanda.</p>''',
- [('Quando contratar o assistente técnico?', 'O ideal é antes da apresentação dos quesitos, para que a perícia já parta das perguntas certas. Também é possível entrar depois do laudo, para análise crítica e parecer.'),
-  ('A Jusante atende reclamante e reclamada?', 'Sim. Atuamos para escritórios de advocacia e empresas, tanto pelo reclamante quanto pela reclamada, com o mesmo critério técnico.'),
-  ('O que preciso enviar?', 'O número do processo já permite a análise inicial. Se houver, envie também a ata com a nomeação do perito e os documentos técnicos da empresa.'),
-  ('Vocês fazem medições na diligência?', 'Sim, quando cabível, com equipamentos próprios para ruído, calor, vibração, iluminamento e amostragem de químicos.')],
+[('O que faz o assistente técnico na perícia trabalhista?', 'É o profissional indicado pela parte para acompanhar a perícia. Analisa os autos e os documentos técnicos, formula quesitos, acompanha a diligência, faz perguntas ao perito e apresenta parecer técnico sobre o laudo. Também prepara a parte assistida para a diligência. Como trabalhador e preposto não costumam dominar a matéria técnica, filtramos o que é relevante para a perícia e orientamos a relatar com clareza as atividades realmente exercidas, os agentes de risco, a frequência, o tempo de exposição e o uso de EPIs. Isso mantém a diligência focada no objeto da perícia. Enviamos um resumo para estudo, sempre com o compromisso de relatar os fatos como são.'),
+  ('Quem pode ser assistente técnico?', 'Um profissional de confiança da parte, habilitado na matéria da perícia. Em insalubridade e periculosidade, normalmente engenheiro de segurança do trabalho ou médico do trabalho. O assistente não está sujeito a impedimento ou suspeição (CPC, art. 466, § 1º).'),
+  ('Quem paga o assistente técnico no processo trabalhista?', 'A parte que o indicou, mesmo que vença na matéria da perícia (Súmula 341 do TST). Os honorários do assistente são contratados diretamente com ele e não se confundem com os do perito do juízo.'),
+  ('Como é feita a perícia de insalubridade ou periculosidade?', 'O perito nomeado pelo juiz agenda a diligência, visita o local de trabalho, ouve as partes sobre as atividades, analisa documentos e, quando cabível, faz medições. Depois elabora o laudo, respondendo aos quesitos.'),
+  ('Quanto tempo dura a perícia e o que acontece depois?', 'A diligência costuma durar algumas horas, conforme o caso. O laudo é entregue no prazo fixado pelo juiz. Depois, as partes se manifestam, e os assistentes técnicos podem apresentar parecer no prazo comum de 15 dias (CPC, art. 477, § 1º). Se houver dúvidas, o perito presta esclarecimentos.'),
+  ('Quando contratar o assistente técnico?', 'O ideal é antes da apresentação dos quesitos, para que a perícia já parta das perguntas certas. Também é possível entrar depois do laudo, para análise crítica e parecer.')],
  ['/pericia-insalubridade/', '/pericia-periculosidade/', '/acidente-de-trabalho-e-ergonomia/'])
 
 # ---------------------------------------------------------------- INSALUBRIDADE
@@ -171,8 +173,10 @@ service_page('/pericia-insalubridade/',
 <p>O fornecimento do EPI, por si só, não afasta o adicional. Pesam a adequação ao risco, o Certificado de Aprovação, a vida útil, a periodicidade de troca, o treinamento e a fiscalização do uso. Esses pontos são verificados nos documentos e na diligência.</p>
 <h2>Medições próprias</h2>
 <p>Quando a avaliação quantitativa é cabível, realizamos medições com equipamentos próprios para ruído, calor, vibração, iluminamento e amostragem de químicos com bomba.</p>''',
- [('A insalubridade depende do cargo?', 'Não. A conclusão depende da atividade real, do agente, da frequência e do tempo de exposição e das medidas de controle. O nome do cargo não define a exposição.'),
-  ('O uso de EPI elimina a insalubridade?', 'Pode eliminar ou neutralizar, desde que o EPI seja adequado ao risco, tenha CA válido, seja substituído na periodicidade correta e tenha uso orientado e fiscalizado.'),
+[('O que caracteriza insalubridade no ambiente de trabalho?', 'A exposição a agentes nocivos à saúde acima dos limites de tolerância ou nas condições previstas nos anexos da NR-15 (CLT, art. 189). A conclusão depende da atividade real, do agente, da frequência e do tempo de exposição e das medidas de controle. O nome do cargo não define a exposição.'),
+  ('Quais são os graus de insalubridade?', 'Mínimo, médio e máximo, com adicional de 10%, 20% e 40%, respectivamente (CLT, art. 192). O grau é definido pelo anexo da NR-15 em que a exposição se enquadra.'),
+  ('Com EPI ainda existe insalubridade?', 'Pode não existir, se o EPI eliminar ou neutralizar o agente. Para isso, ele precisa ser adequado ao risco, ter CA válido, ser substituído na periodicidade correta e ter uso orientado e fiscalizado. Só o fornecimento não basta.'),
+  ('Quando o trabalhador deixa de ter direito à insalubridade?', 'Quando o risco é eliminado (CLT, art. 194), por exemplo com mudança de processo, de função ou com medidas de controle eficazes. A reclassificação ou descaracterização pela autoridade competente também repercute no adicional (Súmula 248 do TST).'),
   ('Quais documentos ajudam na perícia?', 'PPP, LTCAT, PGR, fichas de entrega de EPI, FISPQs dos produtos e laudos ambientais anteriores.')],
  ['/assistencia-tecnica-pericia-trabalhista/', '/pericia-periculosidade/', '/ltcat-ppp-extemporaneo/'])
 
@@ -195,9 +199,10 @@ service_page('/pericia-periculosidade/',
 </ul>
 <h2>Frequência de exposição</h2>
 <p>O contato eventual ou fortuito, ou o habitual por tempo extremamente reduzido, tem tratamento diferente do contato permanente ou intermitente. Por isso a descrição precisa da rotina, com tempos e locais, é decisiva para a conclusão.</p>''',
- [('Basta trabalhar perto de inflamáveis?', 'Não. É preciso verificar se o local é área de risco nos termos do anexo, as quantidades envolvidas e se havia ingresso na área, com que frequência.'),
-  ('A periculosidade depende de medição?', 'Em geral, não. A análise é principalmente qualitativa: atividade, local, área de risco e frequência.'),
-  ('O que levar para a diligência?', 'A descrição da rotina real, com locais e tempos, além de plantas, licenças e documentos de SST da empresa.')],
+[('Quais trabalhos dão direito à periculosidade?', 'As atividades previstas nos anexos da NR-16: inflamáveis, explosivos, energia elétrica, segurança pessoal e patrimonial, motocicleta, entre outras. O adicional é de 30% sobre o salário-base (CLT, art. 193, § 1º).'),
+  ('Dá para receber periculosidade e insalubridade juntas?', 'Não. A CLT prevê que o trabalhador opte por um dos adicionais (art. 193, § 2º). O TST fixou tese vinculante de que eles não se acumulam, ainda que decorram de fatos geradores distintos (IRR 239-55.2011.5.02.0319, Tema 17).'),
+  ('Basta trabalhar perto de inflamáveis?', 'Não. É preciso verificar se o local é área de risco nos termos do anexo, as quantidades envolvidas e se havia ingresso na área, com que frequência.'),
+  ('A periculosidade depende de medição?', 'Em geral, não. A análise é principalmente qualitativa: atividade, local, área de risco e frequência.')],
  ['/assistencia-tecnica-pericia-trabalhista/', '/pericia-insalubridade/', '/acidente-de-trabalho-e-ergonomia/'])
 
 # ---------------------------------------------------------------- ACIDENTE / ERGONOMIA
@@ -240,8 +245,10 @@ service_page('/ltcat-ppp-extemporaneo/',
 <li>Conclusão fundamentada sobre agentes, intensidade, habitualidade e permanência no período analisado.</li>
 </ul>
 <div class="chips"><span class="chip">PPP</span><span class="chip">PGR/PPRA</span><span class="chip">LTCAT anterior</span><span class="chip">Fichas de EPI</span><span class="chip">FISPQs</span><span class="chip">Laudos ambientais</span><span class="chip">Histórico ocupacional</span></div>''',
- [('O que é LTCAT extemporâneo?', 'É o laudo elaborado depois do período a que se refere, para reconstruir tecnicamente as condições de trabalho daquela época.'),
-  ('Serve para aposentadoria especial?', 'Serve como prova técnica da exposição. A aceitação depende da fundamentação e da análise do INSS ou do Judiciário.'),
+[('O LTCAT é obrigatório para aposentadoria especial?', 'A comprovação da exposição é feita pelo PPP, que deve ser emitido com base em laudo técnico, o LTCAT (Lei 8.213/91, art. 58, § 1º). Sem um laudo que sustente o PPP, a prova da atividade especial fica fragilizada.'),
+  ('O LTCAT substitui o PPP?', 'Não. São documentos diferentes: o LTCAT é o laudo técnico das condições ambientais; o PPP é o formulário individual do trabalhador, preenchido com base nele.'),
+  ('O que deve constar no PPP?', 'Dados do trabalhador e das funções exercidas, os agentes nocivos com intensidade ou concentração e a técnica de avaliação, o uso de EPC e EPI e os responsáveis pelos registros ambientais, entre outros campos exigidos pelo INSS.'),
+  ('O que é LTCAT extemporâneo?', 'É o laudo elaborado depois do período a que se refere, para reconstruir tecnicamente as condições de trabalho daquela época.'),
   ('E se a empresa fechou?', 'É possível trabalhar com documentos remanescentes, ambientes similares e o histórico ocupacional, com as ressalvas técnicas cabíveis.')],
  ['/pericia-insalubridade/', '/assistencia-tecnica-pericia-trabalhista/', '/consultoria-ssma/'])
 
