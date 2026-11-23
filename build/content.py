@@ -27,7 +27,7 @@ home += f'''<section class="hero home"><img class="mark" src="/assets/img/mark.w
 <h1>Segurança do Trabalho aplicada à <em>prova técnica</em>.</h1>
 <p class="lead">Assistência técnica pericial para escritórios de advocacia e empresas, para reclamantes e reclamadas, em perícias de insalubridade, periculosidade, acidente de trabalho, ergonomia, LTCAT e PPP.</p>
 <div class="actions"><a class="btn pri" href="{WA}" target="_blank" rel="noopener">Falar pelo WhatsApp</a><a class="btn sec" href="#servicos">Ver serviços</a></div></div>
-<img class="hero-img" src="/assets/img/equipe.webp" alt="Equipe em treinamento de Segurança do Trabalho conduzido pela Jusante" width="1400" height="1050" fetchpriority="high">
+<img class="hero-img" src="/assets/img/turma-treinamento.webp" alt="Turma ao final de treinamento de Segurança do Trabalho conduzido pela Jusante" width="1400" height="1050" fetchpriority="high">
 </div></section>
 <div class="wrap"><div class="stats">
 <div class="stat"><b><small>+</small>430</b><span>assistências técnicas periciais</span></div>
