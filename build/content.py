@@ -19,7 +19,7 @@ home += f'''<section class="hero"><img class="mark" src="/assets/img/mark.webp" 
 <div class="eyebrow">Assistência técnica em perícias trabalhistas</div>
 <h1>Segurança do Trabalho aplicada à <em>prova técnica</em>.</h1>
 <p class="lead">Assistência técnica pericial para escritórios de advocacia e empresas, para reclamantes e reclamadas, em perícias de insalubridade, periculosidade, acidente de trabalho, ergonomia, LTCAT e PPP. São Paulo e todo o Brasil.</p>
-<div class="actions"><a class="btn pri" href="{WA}" target="_blank" rel="noopener">Enviar o processo pelo WhatsApp</a><a class="btn sec" href="#servicos">Ver serviços</a></div>
+<div class="actions"><a class="btn pri" href="{WA}" target="_blank" rel="noopener">Falar pelo WhatsApp</a><a class="btn sec" href="#servicos">Ver serviços</a></div>
 </div></section>
 <div class="wrap"><div class="stats">
 <div class="stat"><b><small>+</small>410</b><span>assistências técnicas periciais</span></div>

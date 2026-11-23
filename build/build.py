@@ -103,7 +103,7 @@ def header():
 '''
 
 
-def cta_band(title='Precisa de apoio técnico em uma perícia?', text='Envie o número do processo pelo WhatsApp. Analisamos o caso e indicamos o melhor caminho.'):
+def cta_band(title='Precisa de apoio técnico em uma perícia?', text='Conte brevemente sua necessidade. Retornamos para entender o caso e indicar o melhor caminho.'):
     return f'''<section><div class="wrap"><div class="cta-band">
 <img class="mark" src="/assets/img/mark.webp" alt="">
 <div><h2>{title}</h2><p>{text}</p></div>
@@ -141,7 +141,7 @@ def hero_page(eyebrow, h1, lead, crumb):
 <div class="eyebrow">{eyebrow}</div>
 <h1>{h1}</h1>
 <p class="lead">{lead}</p>
-<div class="actions"><a class="btn pri" href="{WA}" target="_blank" rel="noopener">Enviar o processo pelo WhatsApp</a></div>
+<div class="actions"><a class="btn pri" href="{WA}" target="_blank" rel="noopener">Falar pelo WhatsApp</a></div>
 </div></section>
 '''
 
@@ -161,7 +161,7 @@ def crumb_ld(name, path):
 
 def side_box():
     return f'''<aside class="box"><h3>Fale com a Jusante</h3>
-<p>Envie o número do processo. Respondemos com a análise inicial e o escopo do trabalho.</p>
+<p>Conte brevemente o caso. Retornamos para entender a demanda e indicar o melhor caminho.</p>
 <a class="btn dark" href="{WA}" target="_blank" rel="noopener">WhatsApp {TEL}</a>
 {email_link('<p style="margin-top:14px">') + ('</p>' if EMAIL else '')}
 <p style="margin-top:18px;font-size:13px">Atendimento a escritórios de advocacia e empresas, para reclamantes e reclamadas.</p></aside>'''
