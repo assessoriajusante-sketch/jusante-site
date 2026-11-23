@@ -15,9 +15,9 @@ a{color:var(--teal)}
 
 /* header */
 header.site{background:var(--ink);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(79,193,218,.18)}
-header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:96px}
-header.site .brand img{height:72px;width:auto}
-@media(max-width:900px){header.site .wrap{height:80px}header.site .brand img{height:58px}}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:124px}
+header.site .brand img{height:100px;width:auto}
+@media(max-width:900px){header.site .wrap{height:92px}header.site .brand img{height:70px}}
 nav.main{display:flex;align-items:center;gap:28px}
 nav.main a{color:#d6e2e5;text-decoration:none;font-size:14px;font-weight:500}
 nav.main a:hover{color:#fff}
@@ -36,7 +36,7 @@ details.mob{display:none}
  details.mob{display:block}
  details.mob summary{list-style:none;cursor:pointer;color:#fff;font-size:15px;font-weight:600;border:1px solid rgba(255,255,255,.3);padding:8px 14px;border-radius:8px}
  details.mob summary::-webkit-details-marker{display:none}
- details.mob .panel{position:absolute;left:0;right:0;top:80px;background:var(--ink);padding:12px 24px 24px;display:grid;gap:4px;border-bottom:1px solid rgba(79,193,218,.25)}
+ details.mob .panel{position:absolute;left:0;right:0;top:92px;background:var(--ink);padding:12px 24px 24px;display:grid;gap:4px;border-bottom:1px solid rgba(79,193,218,.25)}
  details.mob .panel a{color:#e3ecee;text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 }
 
@@ -121,7 +121,7 @@ section.dark ul.check li::before{background:var(--accent)}
 .prose ul{margin-top:14px;padding-left:20px}
 .prose li{margin-bottom:6px}
 .aside{display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:start}
-.aside .box{position:sticky;top:120px;background:var(--soft);border-radius:14px;padding:26px}
+.aside .box{position:sticky;top:144px;background:var(--soft);border-radius:14px;padding:26px}
 .aside .box h3{font-size:17px}
 .aside .box p{font-size:14px;color:var(--muted);margin-top:8px}
 .aside .box .btn{margin-top:18px;width:100%;justify-content:center}

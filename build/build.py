@@ -89,7 +89,7 @@ def head(title, desc, path, extra_ld=None):
 def header():
     svc = ''.join(f'<a href="{u}">{n}</a>' for u, n in SERVICOS)
     return f'''<header class="site"><div class="wrap">
-<a class="brand" href="/" aria-label="Jusante Perícias e SSMA – início"><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="163" height="72"></a>
+<a class="brand" href="/" aria-label="Jusante Perícias e SSMA – início"><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="226" height="100"></a>
 <nav class="main" aria-label="Principal">
 <details class="svc"><summary>Serviços</summary><div class="dd">{svc}</div></details>
 <a href="/#metodo">Método</a>
