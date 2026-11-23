@@ -82,7 +82,46 @@ home += f'''<section class="hero"><img class="mark" src="/assets/img/mark.webp" 
 <a class="btn dark" style="margin-top:26px" href="/eng-clayton-mendel/">Conheça a trajetória</a></div>
 </div></section>
 '''
-home += cta_band() + footer()
+
+home += """
+<section class="soft"><div class="wrap">
+<div class="eyebrow">O que decide uma perícia</div>
+<h2>Quatro pontos que costumam definir o laudo.</h2>
+<div class="grid g4">
+<div class="card"><span class="num">EPI</span><h3>Eficácia do EPI</h3><p>Adequação ao risco, CA válido, vida útil, periodicidade de troca, treinamento e fiscalização do uso.</p></div>
+<div class="card"><span class="num">EXPOSIÇÃO</span><h3>Tempo e forma de exposição</h3><p>Habitualidade, frequência e duração reais, apuradas pela rotina efetivamente exercida.</p></div>
+<div class="card"><span class="num">NR-16</span><h3>Área de risco</h3><p>Delimitação da área prevista no anexo e verificação do ingresso do trabalhador.</p></div>
+<div class="card"><span class="num">NHO</span><h3>Metodologia de medição</h3><p>Avaliação conforme as NHOs da Fundacentro, com instrumento adequado e registro rastreável.</p></div>
+</div></div></section>
+
+<section id="atendimento"><div class="wrap split">
+<div><div class="eyebrow">Onde atendemos</div>
+<h2>São Paulo, regiões metropolitanas e interior próximo.</h2>
+<p class="lead">Diligências presenciais nas áreas do TRT-2 e do TRT-15. Demais localidades sob consulta.</p></div>
+<div class="grid g2" style="margin-top:0">
+<div class="card"><span class="num">TRT-2</span><h3>Capital e regiões metropolitanas</h3><p>São Paulo (capital), ABC (Santo André, São Bernardo do Campo, São Caetano do Sul, Diadema, Mauá), Guarulhos, Osasco, Barueri, Carapicuíba, Cotia, Taboão da Serra, Mogi das Cruzes, Suzano e Baixada Santista.</p></div>
+<div class="card"><span class="num">TRT-15</span><h3>Interior próximo</h3><p>Campinas, Jundiaí, Sorocaba, Indaiatuba, Atibaia, Bragança Paulista e São José dos Campos.</p></div>
+</div></div></section>
+
+<section class="soft" id="fale"><div class="wrap split">
+<div><div class="eyebrow">Fale com a Jusante</div>
+<h2>Conte o caso em poucos cliques.</h2>
+<p class="lead">Preencha os campos e a mensagem abre pronta no WhatsApp. Nada é gravado no site.</p></div>
+<form class="card waform" id="waform">
+<label>Você é<select name="perfil" required><option value="">Selecione</option><option>Advogado(a) do reclamante</option><option>Advogado(a) da reclamada</option><option>Empresa</option><option>Trabalhador(a)</option><option>Outro</option></select></label>
+<label>Assunto<select name="assunto" required><option value="">Selecione</option><option>Insalubridade</option><option>Periculosidade</option><option>Acidente de trabalho</option><option>Ergonomia</option><option>LTCAT / PPP</option><option>PGR / consultoria SSMA</option><option>Treinamentos</option><option>Outro</option></select></label>
+<label>Cidade<input name="cidade" placeholder="Ex.: Guarulhos"></label>
+<label>Mensagem<textarea name="msg" rows="3" placeholder="Conte brevemente a necessidade"></textarea></label>
+<button class="btn dark" type="submit">Abrir no WhatsApp</button>
+</form>
+</div></section>
+<script>
+document.getElementById('waform').addEventListener('submit',function(e){e.preventDefault();var f=e.target;
+var t='Olá, vim pelo site da Jusante.\\nPerfil: '+f.perfil.value+'\\nAssunto: '+f.assunto.value+(f.cidade.value?'\\nCidade: '+f.cidade.value:'')+(f.msg.value?'\\n\\n'+f.msg.value:'');
+window.open('https://wa.me/5511986489818?text='+encodeURIComponent(t),'_blank','noopener');});
+</script>
+"""
+home += footer()
 write('/', home)
 
 # ---------------------------------------------------------------- ASSISTÊNCIA TÉCNICA

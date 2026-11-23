@@ -28,7 +28,7 @@ ORG = {
     "url": BASE + "/", "logo": BASE + "/assets/img/icon-512.png", "image": BASE + "/assets/img/og.jpg",
     "telephone": "+55-11-98648-9818",
     "address": {"@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR"},
-    "areaServed": ["São Paulo", "Brasil"],
+    "areaServed": ["São Paulo", "Região Metropolitana de São Paulo", "Baixada Santista", "Campinas", "Jundiaí", "Sorocaba", "São José dos Campos"],
     "founder": {"@id": BASE + "/eng-clayton-mendel/#person"},
     "sameAs": ["https://www.instagram.com/jusantessma/", "https://www.linkedin.com/company/jusante"],
     "knowsAbout": ["Assistência técnica pericial", "Perícia trabalhista", "Insalubridade", "Periculosidade",
@@ -94,10 +94,10 @@ def header():
 <details class="svc"><summary>Serviços</summary><div class="dd">{svc}</div></details>
 <a href="/#metodo">Método</a>
 <a href="/eng-clayton-mendel/">Responsável técnico</a>
-<a href="/#contato">Contato</a>
+<a href="/#fale">Contato</a>
 <a class="cta" href="{WA}" target="_blank" rel="noopener">Fale no WhatsApp</a>
 </nav>
-<details class="mob"><summary>Menu</summary><div class="panel">{svc}<a href="/#metodo">Método</a><a href="/eng-clayton-mendel/">Responsável técnico</a><a href="/#contato">Contato</a><a href="{WA}" target="_blank" rel="noopener">WhatsApp {TEL}</a></div></details>
+<details class="mob"><summary>Menu</summary><div class="panel">{svc}<a href="/#metodo">Método</a><a href="/eng-clayton-mendel/">Responsável técnico</a><a href="/#fale">Contato</a><a href="{WA}" target="_blank" rel="noopener">WhatsApp {TEL}</a></div></details>
 </div></header>
 <main id="conteudo">
 '''

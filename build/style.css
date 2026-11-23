@@ -157,3 +157,8 @@ footer.site .legal{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;pa
 @media(max-width:760px){footer.site .cols{grid-template-columns:1fr}}
 .wa-float{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:60}
 .wa-float svg{width:28px;height:28px;fill:#fff}
+
+.waform label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:14px}
+.waform select,.waform input,.waform textarea{display:block;width:100%;margin-top:6px;padding:11px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:15px;color:var(--txt);background:#fff}
+.waform select:focus,.waform input:focus,.waform textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+.waform .btn{border:0;cursor:pointer;justify-content:center;width:100%;margin-top:4px}
