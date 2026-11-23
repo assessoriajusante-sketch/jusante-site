@@ -89,7 +89,7 @@ def head(title, desc, path, extra_ld=None):
 def header():
     svc = ''.join(f'<a href="{u}">{n}</a>' for u, n in SERVICOS)
     return f'''<header class="site"><div class="wrap">
-<a class="brand" href="/" aria-label="Jusante Perícias e SSMA – início"><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="108" height="48"></a>
+<a class="brand" href="/" aria-label="Jusante Perícias e SSMA – início"><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="163" height="72"></a>
 <nav class="main" aria-label="Principal">
 <details class="svc"><summary>Serviços</summary><div class="dd">{svc}</div></details>
 <a href="/#metodo">Método</a>
@@ -117,7 +117,7 @@ def footer():
     return f'''</main>
 <footer class="site" id="contato"><div class="wrap">
 <div class="cols">
-<div><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="140" height="62" style="height:62px;width:auto">
+<div><img src="/assets/img/logo.webp" alt="Jusante Perícias e SSMA" width="181" height="80" style="height:80px;width:auto">
 <p style="margin-top:16px;max-width:360px">Engenharia de Segurança do Trabalho aplicada à prova técnica. Assistência técnica pericial para escritórios de advocacia e empresas, para reclamantes e reclamadas.</p></div>
 <div><h4>Serviços</h4>{svc}</div>
 <div><h4>Contato</h4>
