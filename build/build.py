@@ -8,6 +8,9 @@ BASE = 'https://jusante.com.br'
 TODAY = datetime.date.today().isoformat()
 WA = 'https://wa.me/5511986489818?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20assist%C3%AAncia%20t%C3%A9cnica%20pericial.'
 EMAIL = os.environ.get('JUSANTE_EMAIL', '').strip()
+_cf = os.path.join(os.path.dirname(__file__), 'contato.txt')
+if not EMAIL and os.path.exists(_cf):
+    EMAIL = open(_cf).read().strip()
 TEL = '(11) 98648-9818'
 
 SERVICOS = [
